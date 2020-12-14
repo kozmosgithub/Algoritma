@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="firat"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-10-16 12:31:08 &#214;S"/>
+        <attribute name="created" value="ZmlyYXQ7RklSQVQ7MjAyMC0xMC0xNjsxMToyOToxNyDDlsOWOzI0NTY="/>
+        <attribute name="edited" value="ZmlyYXQ7RklSQVQ7MjAyMC0xMC0xNjsxMjozMTowOCDDllM7MzsyNDI5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="BaslangicSayi" type="Integer" array="False" size=""/>
+            <output expression="&quot;For Dongusu Kac&#305;nc&#305; Say&#305;dan Ba&#351;las&#305;n&quot;" newline="True"/>
+            <input variable="BaslangicSayi"/>
+            <declare name="BitisSayi" type="Integer" array="False" size=""/>
+            <output expression="&quot;For D&#246;ng&#252;s&#252; Ka&#231;&#305;nc&#305; Say&#305;da Bitsin&quot;" newline="True"/>
+            <input variable="BitisSayi"/>
+            <declare name="Kacinci" type="Integer" array="False" size=""/>
+            <for variable="Kacinci" start="BaslangicSayi" end="BitisSayi" direction="inc" step="1">
+                <if expression="Kacinci % 2 == 1">
+                    <then>
+                        <output expression="Kacinci &amp; &quot; sayisi tektir&quot;" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
